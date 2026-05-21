@@ -1,0 +1,27 @@
+------------------------------
+Running NeuMF with the following parameters:
+J = 8
+MLP Layers = [16,8]
+Negative samling ratio = 4
+Batch Size = 256
+Epochs = 20
+Learning Rate = 0.001
+Optimizer = adam
+Test
+Using TensorFlow backend.
+NeuMF arguments: Namespace(batch_size=256, dataset='ml-100k', epochs=20, layers='[16,8]', learner='adam', lr=0.001, mf_pretrain='', mlp_pretrain='', num_factors=8, num_neg=4, out=1, path='Data/', reg_layers='[0,0]', reg_mf=0, verbose=1) 
+Load data done [1.5 s]. #user=944, #item=1683, #train=99057, #test=943
+Init: HR = 0.1113, NDCG = 0.0503
+Iteration 0 [12.5 s]: HR = 0.4846, NDCG = 0.2710, loss = 0.3780 [1.5 s]
+Iteration 1 [15.2 s]: HR = 0.5599, NDCG = 0.3154, loss = 0.3006 [2.1 s]
+Iteration 2 [13.8 s]: HR = 0.5885, NDCG = 0.3323, loss = 0.2833 [1.4 s]
+Iteration 3 [12.2 s]: HR = 0.5970, NDCG = 0.3448, loss = 0.2734 [1.4 s]
+Iteration 4 [15.0 s]: HR = 0.6013, NDCG = 0.3436, loss = 0.2649 [1.3 s]
+Iteration 5 [13.3 s]: HR = 0.6119, NDCG = 0.3516, loss = 0.2581 [1.2 s]
+Iteration 6 [12.5 s]: HR = 0.6140, NDCG = 0.3490, loss = 0.2532 [1.3 s]
+Iteration 7 [12.0 s]: HR = 0.6214, NDCG = 0.3595, loss = 0.2486 [1.3 s]
+Iteration 8 [15.7 s]: HR = 0.6288, NDCG = 0.3641, loss = 0.2445 [1.5 s]
+Iteration 9 [14.5 s]: HR = 0.6341, NDCG = 0.3650, loss = 0.2433 [1.8 s]
+
+
+

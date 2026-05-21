@@ -1,0 +1,15 @@
+J = 8
+MLP Layers = [16,8]
+Negative samling ratio = 4
+Batch Size = 256
+Epochs = 10
+Learning Rate = 0.001
+Optimizer = adam
+-----
+Best Iteration 8:  HR = 0.6479, NDCG = 0.3772. 
+
+Changed Batch size 256->128
+End. Best Iteration 9:  HR = 0.6469, NDCG = 0.3820. 
+
+Changed epochs to 10->20 and batch size 128->256
+End. Best Iteration 17:  HR = 0.6607, NDCG = 0.3756. 
