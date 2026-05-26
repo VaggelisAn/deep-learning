@@ -1,0 +1,70 @@
+
+
+
+------------------------------
+Running NeuMF with the following parameters:
+J = 16
+MLP Layers = [64,32,16]
+Negative samling ratio = 4
+Batch Size = 512
+Epochs = 15
+Learning Rate = 0.001
+Optimizer = adam
+Using TensorFlow backend.
+MLP arguments: Namespace(batch_size=512, dataset='ml-100k', epochs=15, layers='[64,32,16]', learner='adam', lr=0.001, num_neg=4, out=1, path='Data/', reg_layers='[0,0,0]', verbose=1) 
+Load data done [2.9 s]. #user=944, #item=1683, #train=99057, #test=943
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:321: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:673: calling RandomNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:1047: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:634: calling RandomUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:491: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/optimizers.py:658: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:2446: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/tensorflow_core/python/ops/nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:117: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:122: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:269: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:281: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+Init: HR = 0.0997, NDCG = 0.0453 [2.5]
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:740: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /home/vag/miniconda3/envs/dl/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:736: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+Iteration 0 [24.3 s]: HR = 0.3934, NDCG = 0.2117, loss = 0.3795 [3.2 s]
+Iteration 1 [23.1 s]: HR = 0.4104, NDCG = 0.2186, loss = 0.3520 [3.0 s]
+Iteration 2 [23.9 s]: HR = 0.5122, NDCG = 0.2869, loss = 0.3309 [2.2 s]
+Iteration 3 [23.1 s]: HR = 0.5292, NDCG = 0.3009, loss = 0.3125 [1.4 s]
+Iteration 4 [22.8 s]: HR = 0.5599, NDCG = 0.3183, loss = 0.3009 [1.8 s]
+Iteration 5 [23.2 s]: HR = 0.5758, NDCG = 0.3293, loss = 0.2893 [1.8 s]
+Iteration 6 [22.2 s]: HR = 0.5843, NDCG = 0.3312, loss = 0.2809 [1.9 s]
+Iteration 7 [22.9 s]: HR = 0.5981, NDCG = 0.3435, loss = 0.2737 [1.8 s]
+Iteration 8 [21.0 s]: HR = 0.6002, NDCG = 0.3435, loss = 0.2665 [2.0 s]
+Iteration 9 [20.2 s]: HR = 0.6002, NDCG = 0.3398, loss = 0.2621 [2.6 s]
+Iteration 10 [21.8 s]: HR = 0.6225, NDCG = 0.3570, loss = 0.2573 [3.2 s]
+Iteration 11 [20.6 s]: HR = 0.6172, NDCG = 0.3555, loss = 0.2525 [3.0 s]
+Iteration 12 [20.4 s]: HR = 0.6288, NDCG = 0.3579, loss = 0.2485 [3.0 s]
+Iteration 13 [22.5 s]: HR = 0.6119, NDCG = 0.3590, loss = 0.2435 [2.8 s]
+Iteration 14 [21.9 s]: HR = 0.6214, NDCG = 0.3585, loss = 0.2408 [2.6 s]
+End. Best Iteration 12:  HR = 0.6288, NDCG = 0.3579. 
+The best MLP model is saved to Pretrain/ml-100k_MLP_[64,32,16]_1779540891.h5
+./run_pretraining_MLP.sh: line 50: unexpected EOF while looking for matching `"'
+./run_pretraining_MLP.sh: line 51: syntax error: unexpected end of file

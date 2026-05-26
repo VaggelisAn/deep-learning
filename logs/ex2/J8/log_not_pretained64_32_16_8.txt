@@ -11,30 +11,6 @@ Epochs = 13
 Learning Rate = 0.001
 Optimizer = adam
 Using TensorFlow backend.
-NeuMF arguments: Namespace(batch_size=512, dataset='ml-100k', epochs=13, layers='[64,32,16,8]', learner='adam', lr=0.001, mf_pretrain='', mlp_pretrain='', num_factors=8, num_neg=4, out=1, path='Data/', reg_layers='[0,0,0]', reg_mf=0, runs=9, verbose=1) 
-Load data done [1.5 s]. #user=944, #item=1683, #train=99057, #test=943
-
-===== Training Session 1/9 =====
-Traceback (most recent call last):
-  File "NeuMF.py", line 194, in <module>
-    model = get_model(num_users, num_items, mf_dim, layers, reg_layers, reg_mf)
-  File "NeuMF.py", line 72, in get_model
-    assert len(layers) == len(reg_layers)
-AssertionError
-finishdddd
----------------------------------------
-
-
-------------------------------
-Running NeuMF with the following parameters:
-J = 8
-MLP Layers = [64,32,16,8]
-Negative samling ratio = 4
-Batch Size = 512
-Epochs = 13
-Learning Rate = 0.001
-Optimizer = adam
-Using TensorFlow backend.
 NeuMF arguments: Namespace(batch_size=512, dataset='ml-100k', epochs=13, layers='[64,32,16,8]', learner='adam', lr=0.001, mf_pretrain='', mlp_pretrain='', num_factors=8, num_neg=4, out=1, path='Data/', reg_layers='[0,0,0,0]', reg_mf=0, runs=10, verbose=1) 
 Load data done [1.7 s]. #user=944, #item=1683, #train=99057, #test=943
 

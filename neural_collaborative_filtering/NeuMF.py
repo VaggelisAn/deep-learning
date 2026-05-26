@@ -228,6 +228,8 @@ if __name__ == '__main__':
 
             if epoch % verbose == 0:
                 hits, ndcgs = evaluate_model(model, testRatings, testNegatives, topK, evaluation_threads)
+                # total_weights = model.count_params()
+                # print(f"Total model parameters: {total_weights}")
                 hr, ndcg, loss = np.array(hits).mean(), np.array(ndcgs).mean(), hist.history['loss'][0]
                 epoch_HRs.append(hr)
                 epoch_NDCGs.append(ndcg)
@@ -275,3 +277,4 @@ if __name__ == '__main__':
             model_out_file = 'Pretrain/%s_NeuMF_%d_%s_best_run%d.h5' % (args.dataset, mf_dim, args.layers, overall_best_run)
             best_model.save_weights(model_out_file, overwrite=True)
             print('Overall best model saved to %s' % model_out_file)
+    

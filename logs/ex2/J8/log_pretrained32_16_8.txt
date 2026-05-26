@@ -1,0 +1,46 @@
+
+
+
+------------------------------
+Running NeuMF with the following parameters:
+J = 8
+MLP Layers = [32,16,8]
+Negative samling ratio = 4
+Batch Size = 512
+Epochs = 15
+Learning Rate = 0.001
+Optimizer = adam
+Using TensorFlow backend.
+NeuMF arguments: Namespace(batch_size=512, dataset='ml-100k', epochs=15, layers='[32,16,8]', learner='adam', lr=0.001, mf_pretrain='Pretrain/ml-100k_GMF_8.h5', mlp_pretrain='Pretrain/ml-100k_MLP_[32,16,8].h5', num_factors=8, num_neg=4, out=1, path='Data/', reg_layers='[0,0,0]', reg_mf=0, runs=1, verbose=1) 
+Load data done [2.0 s]. #user=944, #item=1683, #train=99057, #test=943
+
+===== Training Session 1/1 =====
+Load pretrained GMF (Pretrain/ml-100k_GMF_8.h5) and MLP (Pretrain/ml-100k_MLP_[32,16,8].h5) models done. 
+Session 1 init: HR = 0.6426, NDCG = 0.3673
+Session 1 Iteration 0 [13.0 s]: HR = 0.6479, NDCG = 0.3803, loss = 0.2391 [1.2 s]
+Session 1 Iteration 1 [10.6 s]: HR = 0.6469, NDCG = 0.3763, loss = 0.2334 [1.1 s]
+Session 1 Iteration 2 [10.3 s]: HR = 0.6490, NDCG = 0.3809, loss = 0.2303 [1.1 s]
+Session 1 Iteration 3 [10.7 s]: HR = 0.6532, NDCG = 0.3892, loss = 0.2278 [1.1 s]
+Session 1 Iteration 4 [10.4 s]: HR = 0.6416, NDCG = 0.3836, loss = 0.2263 [1.1 s]
+Session 1 Iteration 5 [10.6 s]: HR = 0.6479, NDCG = 0.3864, loss = 0.2239 [1.2 s]
+Session 1 Iteration 6 [10.4 s]: HR = 0.6426, NDCG = 0.3841, loss = 0.2226 [1.1 s]
+Session 1 Iteration 7 [11.0 s]: HR = 0.6437, NDCG = 0.3822, loss = 0.2207 [1.1 s]
+Session 1 Iteration 8 [10.3 s]: HR = 0.6384, NDCG = 0.3823, loss = 0.2181 [1.1 s]
+Session 1 Iteration 9 [10.2 s]: HR = 0.6458, NDCG = 0.3781, loss = 0.2178 [1.1 s]
+Session 1 Iteration 10 [12.8 s]: HR = 0.6394, NDCG = 0.3831, loss = 0.2161 [1.3 s]
+Session 1 Iteration 11 [11.0 s]: HR = 0.6501, NDCG = 0.3826, loss = 0.2149 [1.1 s]
+Session 1 Iteration 12 [11.0 s]: HR = 0.6448, NDCG = 0.3863, loss = 0.2129 [1.3 s]
+Session 1 Iteration 13 [10.6 s]: HR = 0.6458, NDCG = 0.3814, loss = 0.2116 [1.2 s]
+Session 1 Iteration 14 [11.9 s]: HR = 0.6384, NDCG = 0.3784, loss = 0.2105 [1.3 s]
+Session 1 HRs: [0.647932131495228, 0.6468716861081655, 0.6489925768822906, 0.6532343584305408, 0.6415694591728526, 0.647932131495228, 0.6426299045599152, 0.6436903499469777, 0.6383881230116649, 0.6458112407211029, 0.6394485683987274, 0.6500530222693531, 0.6447507953340403, 0.6458112407211029, 0.6383881230116649]
+Session 1 NDCGs: [0.3802526868825187, 0.3763120887434787, 0.38085741474173235, 0.38920902086137393, 0.3835715741228671, 0.3864139562892121, 0.3840505172607214, 0.3822244026074727, 0.38226291956913516, 0.378111952975378, 0.38313859879147155, 0.38259633492864037, 0.38632961246103376, 0.381387170973907, 0.3783763517854423]
+Session 1 Best HR = 0.6532, Best NDCG = 0.3892, Best Iteration = 3
+
+===== Aggregate Best Metrics =====
+Best HRs: [0.6532343584305408]
+Best NDCGs: [0.38920902086137393]
+Best HR mean: 0.653234, std: 0.000000
+Best NDCG mean: 0.389209, std: 0.000000
+Overall best model saved to Pretrain/ml-100k_NeuMF_8_[32,16,8]_best_run1.h5
+finishdddd
+---------------------------------------

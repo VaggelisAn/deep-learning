@@ -1,0 +1,30 @@
+
+------------------------------
+Running NeuMF with the following parameters:
+J = 8
+MLP Layers = [32,16,8]
+Negative samling ratio = 4
+Batch Size = 512
+Epochs = 1
+Learning Rate = 0.001
+Optimizer = adam
+Using TensorFlow backend.
+NeuMF arguments: Namespace(batch_size=512, dataset='ml-100k', epochs=1, layers='[32,16,8]', learner='adam', lr=0.001, mf_pretrain='', mlp_pretrain='', num_factors=8, num_neg=4, out=1, path='Data/', reg_layers='[0,0,0]', reg_mf=0, runs=1, verbose=1) 
+Load data done [2.0 s]. #user=944, #item=1683, #train=99057, #test=943
+
+===== Training Session 1/1 =====
+Session 1 init: HR = 0.1029, NDCG = 0.0535
+Total model parameters: 63729
+Session 1 Iteration 0 [15.3 s]: HR = 0.4655, NDCG = 0.2569, loss = 0.3758 [1.2 s]
+Session 1 HRs: [0.46553552492046657]
+Session 1 NDCGs: [0.25687738579769126]
+Session 1 Best HR = 0.4655, Best NDCG = 0.2569, Best Iteration = 0
+
+===== Aggregate Best Metrics =====
+Best HRs: [0.46553552492046657]
+Best NDCGs: [0.25687738579769126]
+Best HR mean: 0.465536, std: 0.000000
+Best NDCG mean: 0.256877, std: 0.000000
+Overall best model saved to Pretrain/ml-100k_NeuMF_8_[32,16,8]_best_run1.h5
+finishdddd
+---------------------------------------

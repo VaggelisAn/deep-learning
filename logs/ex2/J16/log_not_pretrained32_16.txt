@@ -1,0 +1,234 @@
+
+
+
+------------------------------
+Running NeuMF with the following parameters:
+J = 16
+MLP Layers = [32,16]
+Negative samling ratio = 4
+Batch Size = 512
+Epochs = 15
+Learning Rate = 0.001
+Optimizer = adam
+Using TensorFlow backend.
+NeuMF arguments: Namespace(batch_size=512, dataset='ml-100k', epochs=15, layers='[32,16]', learner='adam', lr=0.001, mf_pretrain='', mlp_pretrain='', num_factors=16, num_neg=4, out=1, path='Data/', reg_layers='[0,0]', reg_mf=0, runs=10, verbose=1) 
+Load data done [1.4 s]. #user=944, #item=1683, #train=99057, #test=943
+
+===== Training Session 1/10 =====
+Session 1 init: HR = 0.1060, NDCG = 0.0510
+Session 1 Iteration 0 [12.8 s]: HR = 0.4973, NDCG = 0.2735, loss = 0.3797 [1.5 s]
+Session 1 Iteration 1 [14.6 s]: HR = 0.5536, NDCG = 0.3102, loss = 0.3035 [1.3 s]
+Session 1 Iteration 2 [16.6 s]: HR = 0.5726, NDCG = 0.3251, loss = 0.2861 [1.4 s]
+Session 1 Iteration 3 [19.1 s]: HR = 0.5970, NDCG = 0.3377, loss = 0.2719 [2.1 s]
+Session 1 Iteration 4 [19.7 s]: HR = 0.6182, NDCG = 0.3537, loss = 0.2585 [2.3 s]
+Session 1 Iteration 5 [17.9 s]: HR = 0.6320, NDCG = 0.3605, loss = 0.2491 [2.5 s]
+Session 1 Iteration 6 [19.6 s]: HR = 0.6448, NDCG = 0.3748, loss = 0.2421 [2.9 s]
+Session 1 Iteration 7 [21.6 s]: HR = 0.6554, NDCG = 0.3752, loss = 0.2359 [3.1 s]
+Session 1 Iteration 8 [23.2 s]: HR = 0.6501, NDCG = 0.3802, loss = 0.2298 [2.2 s]
+Session 1 Iteration 9 [24.5 s]: HR = 0.6564, NDCG = 0.3860, loss = 0.2238 [2.2 s]
+Session 1 Iteration 10 [23.5 s]: HR = 0.6628, NDCG = 0.3922, loss = 0.2202 [2.3 s]
+Session 1 Iteration 11 [23.1 s]: HR = 0.6734, NDCG = 0.3945, loss = 0.2151 [2.4 s]
+Session 1 Iteration 12 [22.5 s]: HR = 0.6585, NDCG = 0.3903, loss = 0.2121 [2.3 s]
+Session 1 Iteration 13 [22.0 s]: HR = 0.6670, NDCG = 0.3948, loss = 0.2090 [2.4 s]
+Session 1 Iteration 14 [22.1 s]: HR = 0.6681, NDCG = 0.3911, loss = 0.2066 [2.7 s]
+Session 1 HRs: [0.4973488865323436, 0.5535524920466596, 0.5726405090137858, 0.5970307529162248, 0.6182396606574762, 0.6320254506892895, 0.6447507953340403, 0.6553552492046659, 0.6500530222693531, 0.6564156945917285, 0.662778366914104, 0.6733828207847296, 0.6585365853658537, 0.6670201484623541, 0.6680805938494168]
+Session 1 NDCGs: [0.2734567228408442, 0.3101737195749208, 0.32505985910730306, 0.3376958803523816, 0.35373357900629315, 0.3604956444068185, 0.37481221752324917, 0.3752190547631941, 0.3802190228152513, 0.3859573344100768, 0.3922033561087125, 0.39448814522240866, 0.390277826848365, 0.39480419432915853, 0.391127214620717]
+Session 1 Best HR = 0.6734, Best NDCG = 0.3945, Best Iteration = 11
+
+===== Training Session 2/10 =====
+Session 2 init: HR = 0.0859, NDCG = 0.0375
+Session 2 Iteration 0 [21.8 s]: HR = 0.4931, NDCG = 0.2772, loss = 0.3796 [2.0 s]
+Session 2 Iteration 1 [20.8 s]: HR = 0.5440, NDCG = 0.3122, loss = 0.2989 [2.4 s]
+Session 2 Iteration 2 [22.6 s]: HR = 0.5875, NDCG = 0.3327, loss = 0.2805 [3.1 s]
+Session 2 Iteration 3 [19.8 s]: HR = 0.6108, NDCG = 0.3426, loss = 0.2657 [3.3 s]
+Session 2 Iteration 4 [20.4 s]: HR = 0.6204, NDCG = 0.3508, loss = 0.2552 [3.3 s]
+Session 2 Iteration 5 [23.1 s]: HR = 0.6363, NDCG = 0.3590, loss = 0.2475 [2.9 s]
+Session 2 Iteration 6 [21.3 s]: HR = 0.6405, NDCG = 0.3658, loss = 0.2411 [3.1 s]
+Session 2 Iteration 7 [21.0 s]: HR = 0.6490, NDCG = 0.3791, loss = 0.2347 [2.5 s]
+Session 2 Iteration 8 [20.5 s]: HR = 0.6522, NDCG = 0.3829, loss = 0.2285 [2.2 s]
+Session 2 Iteration 9 [19.8 s]: HR = 0.6638, NDCG = 0.3907, loss = 0.2236 [2.7 s]
+Session 2 Iteration 10 [16.9 s]: HR = 0.6681, NDCG = 0.3910, loss = 0.2191 [2.8 s]
+Session 2 Iteration 11 [16.8 s]: HR = 0.6617, NDCG = 0.3924, loss = 0.2147 [2.3 s]
+Session 2 Iteration 12 [16.9 s]: HR = 0.6617, NDCG = 0.3914, loss = 0.2120 [2.3 s]
+Session 2 Iteration 13 [16.9 s]: HR = 0.6596, NDCG = 0.3900, loss = 0.2092 [2.9 s]
+Session 2 Iteration 14 [16.1 s]: HR = 0.6554, NDCG = 0.3826, loss = 0.2058 [2.6 s]
+Session 2 HRs: [0.4931071049840933, 0.5440084835630965, 0.5874867444326617, 0.6108165429480382, 0.6203605514316013, 0.6362672322375398, 0.6405090137857901, 0.6489925768822906, 0.6521739130434783, 0.6638388123011665, 0.6680805938494168, 0.6617179215270413, 0.6617179215270413, 0.6595970307529162, 0.6553552492046659]
+Session 2 NDCGs: [0.2771965070373381, 0.3122020346438304, 0.33266573043738795, 0.34263633325727966, 0.35083325927269005, 0.3589878460338719, 0.36584063416466067, 0.3791136876770002, 0.38288343934785374, 0.39066749980000187, 0.39104162718642144, 0.3924122344966462, 0.3914232165595337, 0.3899835824392998, 0.3825661340242311]
+Session 2 Best HR = 0.6681, Best NDCG = 0.3910, Best Iteration = 10
+
+===== Training Session 3/10 =====
+Session 3 init: HR = 0.0859, NDCG = 0.0352
+Session 3 Iteration 0 [15.9 s]: HR = 0.4793, NDCG = 0.2674, loss = 0.3823 [2.3 s]
+Session 3 Iteration 1 [16.0 s]: HR = 0.5620, NDCG = 0.3201, loss = 0.2981 [2.6 s]
+Session 3 Iteration 2 [16.1 s]: HR = 0.5758, NDCG = 0.3334, loss = 0.2762 [1.7 s]
+Session 3 Iteration 3 [17.3 s]: HR = 0.6055, NDCG = 0.3459, loss = 0.2635 [1.7 s]
+Session 3 Iteration 4 [17.9 s]: HR = 0.6257, NDCG = 0.3583, loss = 0.2545 [1.8 s]
+Session 3 Iteration 5 [18.5 s]: HR = 0.6394, NDCG = 0.3652, loss = 0.2473 [1.8 s]
+Session 3 Iteration 6 [19.4 s]: HR = 0.6426, NDCG = 0.3695, loss = 0.2413 [1.6 s]
+Session 3 Iteration 7 [19.0 s]: HR = 0.6405, NDCG = 0.3666, loss = 0.2346 [1.7 s]
+Session 3 Iteration 8 [19.0 s]: HR = 0.6554, NDCG = 0.3768, loss = 0.2299 [1.6 s]
+Session 3 Iteration 9 [18.4 s]: HR = 0.6479, NDCG = 0.3831, loss = 0.2241 [1.6 s]
+Session 3 Iteration 10 [17.4 s]: HR = 0.6564, NDCG = 0.3845, loss = 0.2190 [2.1 s]
+Session 3 Iteration 11 [17.4 s]: HR = 0.6607, NDCG = 0.3864, loss = 0.2157 [2.8 s]
+Session 3 Iteration 12 [17.0 s]: HR = 0.6607, NDCG = 0.3864, loss = 0.2119 [2.7 s]
+Session 3 Iteration 13 [17.3 s]: HR = 0.6511, NDCG = 0.3861, loss = 0.2087 [1.8 s]
+Session 3 Iteration 14 [17.8 s]: HR = 0.6554, NDCG = 0.3885, loss = 0.2065 [1.5 s]
+Session 3 HRs: [0.47932131495228, 0.5620360551431601, 0.5758218451749735, 0.6055143160127253, 0.6256627783669141, 0.6394485683987274, 0.6426299045599152, 0.6405090137857901, 0.6553552492046659, 0.647932131495228, 0.6564156945917285, 0.6606574761399788, 0.6606574761399788, 0.6511134676564156, 0.6553552492046659]
+Session 3 NDCGs: [0.2674037427628787, 0.32013878957827235, 0.33343430034438554, 0.3459043060142888, 0.35831538034589083, 0.36515902554674157, 0.36948772093014165, 0.3666427063389667, 0.37676403006404174, 0.3830544980577064, 0.38453906246385877, 0.3863883761792029, 0.3864320150708317, 0.38613191824486665, 0.38852766415823686]
+Session 3 Best HR = 0.6607, Best NDCG = 0.3864, Best Iteration = 11
+
+===== Training Session 4/10 =====
+Session 4 init: HR = 0.1039, NDCG = 0.0495
+Session 4 Iteration 0 [18.5 s]: HR = 0.5016, NDCG = 0.2784, loss = 0.3800 [1.6 s]
+Session 4 Iteration 1 [17.8 s]: HR = 0.5567, NDCG = 0.3149, loss = 0.3019 [1.7 s]
+Session 4 Iteration 2 [18.3 s]: HR = 0.5801, NDCG = 0.3303, loss = 0.2809 [1.7 s]
+Session 4 Iteration 3 [18.0 s]: HR = 0.6002, NDCG = 0.3409, loss = 0.2656 [1.8 s]
+Session 4 Iteration 4 [16.3 s]: HR = 0.6204, NDCG = 0.3535, loss = 0.2545 [1.8 s]
+Session 4 Iteration 5 [16.5 s]: HR = 0.6310, NDCG = 0.3557, loss = 0.2458 [2.2 s]
+Session 4 Iteration 6 [15.7 s]: HR = 0.6469, NDCG = 0.3676, loss = 0.2400 [2.6 s]
+Session 4 Iteration 7 [18.3 s]: HR = 0.6479, NDCG = 0.3796, loss = 0.2339 [1.8 s]
+Session 4 Iteration 8 [19.4 s]: HR = 0.6479, NDCG = 0.3758, loss = 0.2279 [2.0 s]
+Session 4 Iteration 9 [19.3 s]: HR = 0.6617, NDCG = 0.3841, loss = 0.2231 [1.8 s]
+Session 4 Iteration 10 [19.1 s]: HR = 0.6564, NDCG = 0.3872, loss = 0.2190 [1.8 s]
+Session 4 Iteration 11 [18.4 s]: HR = 0.6585, NDCG = 0.3868, loss = 0.2154 [2.1 s]
+Session 4 Iteration 12 [19.2 s]: HR = 0.6649, NDCG = 0.3841, loss = 0.2121 [1.9 s]
+Session 4 Iteration 13 [19.0 s]: HR = 0.6564, NDCG = 0.3843, loss = 0.2085 [1.9 s]
+Session 4 Iteration 14 [18.8 s]: HR = 0.6596, NDCG = 0.3848, loss = 0.2067 [2.1 s]
+Session 4 HRs: [0.5015906680805938, 0.5567338282078473, 0.5800636267232238, 0.6002120890774125, 0.6203605514316013, 0.630965005302227, 0.6468716861081655, 0.647932131495228, 0.647932131495228, 0.6617179215270413, 0.6564156945917285, 0.6585365853658537, 0.6648992576882291, 0.6564156945917285, 0.6595970307529162]
+Session 4 NDCGs: [0.2783538382666983, 0.31492422358411387, 0.33034213493241366, 0.3408726102021886, 0.3534840848072385, 0.3557258330253054, 0.3676319219629567, 0.37955540440332003, 0.37581483534323884, 0.38412496550655295, 0.38724176872049476, 0.38682049163217835, 0.384135255794111, 0.3842831866691522, 0.38477091251102297]
+Session 4 Best HR = 0.6649, Best NDCG = 0.3841, Best Iteration = 12
+
+===== Training Session 5/10 =====
+Session 5 init: HR = 0.0870, NDCG = 0.0375
+Session 5 Iteration 0 [20.0 s]: HR = 0.4899, NDCG = 0.2772, loss = 0.3862 [1.7 s]
+Session 5 Iteration 1 [19.0 s]: HR = 0.5387, NDCG = 0.3064, loss = 0.3041 [1.9 s]
+Session 5 Iteration 2 [19.0 s]: HR = 0.5684, NDCG = 0.3239, loss = 0.2839 [1.9 s]
+Session 5 Iteration 3 [18.3 s]: HR = 0.5928, NDCG = 0.3361, loss = 0.2705 [2.3 s]
+Session 5 Iteration 4 [19.5 s]: HR = 0.6098, NDCG = 0.3458, loss = 0.2590 [2.2 s]
+Session 5 Iteration 5 [19.1 s]: HR = 0.6193, NDCG = 0.3532, loss = 0.2494 [2.1 s]
+Session 5 Iteration 6 [19.4 s]: HR = 0.6341, NDCG = 0.3684, loss = 0.2422 [2.1 s]
+Session 5 Iteration 7 [19.6 s]: HR = 0.6479, NDCG = 0.3735, loss = 0.2346 [2.0 s]
+Session 5 Iteration 8 [17.5 s]: HR = 0.6373, NDCG = 0.3742, loss = 0.2289 [2.6 s]
+Session 5 Iteration 9 [16.8 s]: HR = 0.6511, NDCG = 0.3771, loss = 0.2236 [2.8 s]
+Session 5 Iteration 10 [17.5 s]: HR = 0.6564, NDCG = 0.3848, loss = 0.2182 [2.7 s]
+Session 5 Iteration 11 [16.3 s]: HR = 0.6543, NDCG = 0.3843, loss = 0.2146 [1.5 s]
+Session 5 Iteration 12 [17.3 s]: HR = 0.6501, NDCG = 0.3874, loss = 0.2108 [1.6 s]
+Session 5 Iteration 13 [17.9 s]: HR = 0.6596, NDCG = 0.3931, loss = 0.2091 [1.4 s]
+Session 5 Iteration 14 [18.5 s]: HR = 0.6543, NDCG = 0.3925, loss = 0.2074 [1.3 s]
+Session 5 HRs: [0.4899257688229056, 0.5387062566277837, 0.5683987274655355, 0.5927889713679746, 0.6097560975609756, 0.6193001060445387, 0.6341463414634146, 0.647932131495228, 0.6373276776246023, 0.6511134676564156, 0.6564156945917285, 0.6542948038176034, 0.6500530222693531, 0.6595970307529162, 0.6542948038176034]
+Session 5 NDCGs: [0.27720635714456193, 0.30635796979475055, 0.32390860200213445, 0.33611400948592773, 0.34582649652311925, 0.35324673273573365, 0.36842366506837915, 0.37348856781972156, 0.37419205489505647, 0.37709671712703974, 0.38482107679759037, 0.3842640030579225, 0.38744481998844593, 0.3930558577253168, 0.39246206634873976]
+Session 5 Best HR = 0.6596, Best NDCG = 0.3931, Best Iteration = 13
+
+===== Training Session 6/10 =====
+Session 6 init: HR = 0.1283, NDCG = 0.0576
+Session 6 Iteration 0 [18.9 s]: HR = 0.4889, NDCG = 0.2705, loss = 0.3886 [1.5 s]
+Session 6 Iteration 1 [18.3 s]: HR = 0.5599, NDCG = 0.3172, loss = 0.3054 [1.4 s]
+Session 6 Iteration 2 [18.8 s]: HR = 0.5885, NDCG = 0.3321, loss = 0.2839 [1.5 s]
+Session 6 Iteration 3 [19.1 s]: HR = 0.5854, NDCG = 0.3369, loss = 0.2692 [1.6 s]
+Session 6 Iteration 4 [18.2 s]: HR = 0.6108, NDCG = 0.3504, loss = 0.2574 [2.4 s]
+Session 6 Iteration 5 [16.9 s]: HR = 0.6310, NDCG = 0.3581, loss = 0.2481 [2.4 s]
+Session 6 Iteration 6 [17.7 s]: HR = 0.6416, NDCG = 0.3683, loss = 0.2398 [2.6 s]
+Session 6 Iteration 7 [17.9 s]: HR = 0.6448, NDCG = 0.3727, loss = 0.2329 [2.3 s]
+Session 6 Iteration 8 [18.4 s]: HR = 0.6416, NDCG = 0.3759, loss = 0.2269 [2.0 s]
+Session 6 Iteration 9 [18.5 s]: HR = 0.6543, NDCG = 0.3822, loss = 0.2228 [1.9 s]
+Session 6 Iteration 10 [17.3 s]: HR = 0.6532, NDCG = 0.3837, loss = 0.2193 [2.0 s]
+Session 6 Iteration 11 [17.7 s]: HR = 0.6564, NDCG = 0.3844, loss = 0.2152 [2.1 s]
+Session 6 Iteration 12 [18.3 s]: HR = 0.6479, NDCG = 0.3831, loss = 0.2117 [1.8 s]
+Session 6 Iteration 13 [18.6 s]: HR = 0.6448, NDCG = 0.3802, loss = 0.2096 [2.2 s]
+Session 6 Iteration 14 [17.4 s]: HR = 0.6448, NDCG = 0.3817, loss = 0.2073 [2.8 s]
+Session 6 HRs: [0.48886532343584305, 0.559915164369035, 0.5885471898197243, 0.5853658536585366, 0.6108165429480382, 0.630965005302227, 0.6415694591728526, 0.6447507953340403, 0.6415694591728526, 0.6542948038176034, 0.6532343584305408, 0.6564156945917285, 0.647932131495228, 0.6447507953340403, 0.6447507953340403]
+Session 6 NDCGs: [0.27048319874952637, 0.3171582045783825, 0.33207991633500844, 0.33691559125777487, 0.3503524982572209, 0.3580975316477911, 0.3682725609401068, 0.3726826777971818, 0.3758640294009348, 0.3822429045170338, 0.3837122454613979, 0.3843896528567767, 0.3830648562787071, 0.38023193655453147, 0.3817027523482353]
+Session 6 Best HR = 0.6564, Best NDCG = 0.3844, Best Iteration = 11
+
+===== Training Session 7/10 =====
+Session 7 init: HR = 0.0986, NDCG = 0.0442
+Session 7 Iteration 0 [19.5 s]: HR = 0.4952, NDCG = 0.2727, loss = 0.3863 [2.0 s]
+Session 7 Iteration 1 [17.7 s]: HR = 0.5631, NDCG = 0.3116, loss = 0.2999 [2.9 s]
+Session 7 Iteration 2 [18.2 s]: HR = 0.5949, NDCG = 0.3289, loss = 0.2819 [2.9 s]
+Session 7 Iteration 3 [16.6 s]: HR = 0.6002, NDCG = 0.3412, loss = 0.2686 [2.5 s]
+Session 7 Iteration 4 [17.9 s]: HR = 0.6119, NDCG = 0.3481, loss = 0.2567 [1.5 s]
+Session 7 Iteration 5 [18.2 s]: HR = 0.6310, NDCG = 0.3624, loss = 0.2476 [1.6 s]
+Session 7 Iteration 6 [17.6 s]: HR = 0.6458, NDCG = 0.3743, loss = 0.2401 [1.5 s]
+Session 7 Iteration 7 [17.5 s]: HR = 0.6479, NDCG = 0.3703, loss = 0.2331 [1.5 s]
+Session 7 Iteration 8 [17.4 s]: HR = 0.6532, NDCG = 0.3767, loss = 0.2277 [1.7 s]
+Session 7 Iteration 9 [17.8 s]: HR = 0.6479, NDCG = 0.3791, loss = 0.2221 [1.8 s]
+Session 7 Iteration 10 [17.4 s]: HR = 0.6649, NDCG = 0.3873, loss = 0.2184 [2.4 s]
+Session 7 Iteration 11 [16.9 s]: HR = 0.6628, NDCG = 0.3831, loss = 0.2150 [1.9 s]
+Session 7 Iteration 12 [17.7 s]: HR = 0.6479, NDCG = 0.3814, loss = 0.2120 [1.8 s]
+Session 7 Iteration 13 [18.3 s]: HR = 0.6511, NDCG = 0.3818, loss = 0.2091 [1.8 s]
+Session 7 Iteration 14 [17.8 s]: HR = 0.6511, NDCG = 0.3850, loss = 0.2070 [1.9 s]
+Session 7 HRs: [0.49522799575821846, 0.5630965005302226, 0.5949098621420997, 0.6002120890774125, 0.6118769883351007, 0.630965005302227, 0.6458112407211029, 0.647932131495228, 0.6532343584305408, 0.647932131495228, 0.6648992576882291, 0.662778366914104, 0.647932131495228, 0.6511134676564156, 0.6511134676564156]
+Session 7 NDCGs: [0.2726808678288662, 0.31162594001476873, 0.32893882485171816, 0.34116779264736563, 0.34809666864445915, 0.3623830975634173, 0.3743287005027839, 0.3702844064010944, 0.3767137294181008, 0.3791040416473772, 0.38726128412552785, 0.3831045515029664, 0.3814352969338229, 0.3817897002947755, 0.38501478855005794]
+Session 7 Best HR = 0.6649, Best NDCG = 0.3873, Best Iteration = 10
+
+===== Training Session 8/10 =====
+Session 8 init: HR = 0.0848, NDCG = 0.0372
+Session 8 Iteration 0 [18.1 s]: HR = 0.4814, NDCG = 0.2654, loss = 0.3911 [2.0 s]
+Session 8 Iteration 1 [17.4 s]: HR = 0.5536, NDCG = 0.3119, loss = 0.3030 [1.8 s]
+Session 8 Iteration 2 [17.2 s]: HR = 0.5875, NDCG = 0.3352, loss = 0.2810 [2.0 s]
+Session 8 Iteration 3 [16.2 s]: HR = 0.5949, NDCG = 0.3394, loss = 0.2687 [2.0 s]
+Session 8 Iteration 4 [16.7 s]: HR = 0.6151, NDCG = 0.3523, loss = 0.2579 [3.2 s]
+Session 8 Iteration 5 [17.2 s]: HR = 0.6320, NDCG = 0.3659, loss = 0.2489 [3.4 s]
+Session 8 Iteration 6 [16.2 s]: HR = 0.6394, NDCG = 0.3681, loss = 0.2423 [3.2 s]
+Session 8 Iteration 7 [16.6 s]: HR = 0.6405, NDCG = 0.3771, loss = 0.2355 [2.1 s]
+Session 8 Iteration 8 [17.4 s]: HR = 0.6437, NDCG = 0.3786, loss = 0.2301 [1.8 s]
+Session 8 Iteration 9 [18.6 s]: HR = 0.6585, NDCG = 0.3787, loss = 0.2261 [1.8 s]
+Session 8 Iteration 10 [19.7 s]: HR = 0.6564, NDCG = 0.3820, loss = 0.2208 [1.6 s]
+Session 8 Iteration 11 [19.0 s]: HR = 0.6543, NDCG = 0.3833, loss = 0.2170 [1.9 s]
+Session 8 Iteration 12 [19.5 s]: HR = 0.6575, NDCG = 0.3902, loss = 0.2129 [1.6 s]
+Session 8 Iteration 13 [18.7 s]: HR = 0.6649, NDCG = 0.3907, loss = 0.2106 [1.7 s]
+Session 8 Iteration 14 [17.9 s]: HR = 0.6649, NDCG = 0.3955, loss = 0.2073 [2.4 s]
+Session 8 HRs: [0.4814422057264051, 0.5535524920466596, 0.5874867444326617, 0.5949098621420997, 0.6150583244962884, 0.6320254506892895, 0.6394485683987274, 0.6405090137857901, 0.6436903499469777, 0.6585365853658537, 0.6564156945917285, 0.6542948038176034, 0.6574761399787911, 0.6648992576882291, 0.6648992576882291]
+Session 8 NDCGs: [0.2653850762701305, 0.31186961925810974, 0.3351759666032962, 0.3394074638273223, 0.35228544305903436, 0.3659287888564185, 0.3680964136104816, 0.37707811617938203, 0.37858943597909117, 0.3787041543604207, 0.38201437648878805, 0.3832604898702887, 0.39017513235146223, 0.3907047468269556, 0.3955130013884708]
+Session 8 Best HR = 0.6649, Best NDCG = 0.3907, Best Iteration = 13
+
+===== Training Session 9/10 =====
+Session 9 init: HR = 0.1103, NDCG = 0.0531
+Session 9 Iteration 0 [19.2 s]: HR = 0.4793, NDCG = 0.2681, loss = 0.3826 [2.7 s]
+Session 9 Iteration 1 [18.2 s]: HR = 0.5599, NDCG = 0.3181, loss = 0.2999 [3.1 s]
+Session 9 Iteration 2 [16.5 s]: HR = 0.5854, NDCG = 0.3335, loss = 0.2774 [3.4 s]
+Session 9 Iteration 3 [16.7 s]: HR = 0.5992, NDCG = 0.3420, loss = 0.2648 [3.4 s]
+Session 9 Iteration 4 [16.5 s]: HR = 0.6066, NDCG = 0.3509, loss = 0.2558 [2.7 s]
+Session 9 Iteration 5 [18.8 s]: HR = 0.6278, NDCG = 0.3547, loss = 0.2468 [2.2 s]
+Session 9 Iteration 6 [19.4 s]: HR = 0.6288, NDCG = 0.3597, loss = 0.2408 [2.0 s]
+Session 9 Iteration 7 [18.9 s]: HR = 0.6426, NDCG = 0.3708, loss = 0.2349 [1.9 s]
+Session 9 Iteration 8 [18.7 s]: HR = 0.6543, NDCG = 0.3779, loss = 0.2288 [1.9 s]
+Session 9 Iteration 9 [18.8 s]: HR = 0.6490, NDCG = 0.3761, loss = 0.2232 [1.8 s]
+Session 9 Iteration 10 [19.3 s]: HR = 0.6585, NDCG = 0.3819, loss = 0.2183 [1.9 s]
+Session 9 Iteration 11 [20.7 s]: HR = 0.6607, NDCG = 0.3841, loss = 0.2151 [1.8 s]
+Session 9 Iteration 12 [20.6 s]: HR = 0.6532, NDCG = 0.3884, loss = 0.2116 [2.0 s]
+Session 9 Iteration 13 [20.0 s]: HR = 0.6607, NDCG = 0.3879, loss = 0.2088 [2.0 s]
+Session 9 Iteration 14 [18.2 s]: HR = 0.6628, NDCG = 0.3923, loss = 0.2057 [2.8 s]
+Session 9 HRs: [0.47932131495228, 0.559915164369035, 0.5853658536585366, 0.5991516436903499, 0.6065747613997879, 0.6277836691410392, 0.6288441145281018, 0.6426299045599152, 0.6542948038176034, 0.6489925768822906, 0.6585365853658537, 0.6606574761399788, 0.6532343584305408, 0.6606574761399788, 0.662778366914104]
+Session 9 NDCGs: [0.2680844746846202, 0.3180637830533882, 0.33352831302963354, 0.342032337031425, 0.3508748141749967, 0.35470476123424394, 0.3597283447790504, 0.37076939071328757, 0.3778631696250467, 0.37607908203424134, 0.38194986123485264, 0.38411622642602256, 0.38840288370032633, 0.38789239666314496, 0.39228131251017917]
+Session 9 Best HR = 0.6628, Best NDCG = 0.3923, Best Iteration = 14
+
+===== Training Session 10/10 =====
+Session 10 init: HR = 0.0965, NDCG = 0.0478
+Session 10 Iteration 0 [18.4 s]: HR = 0.4804, NDCG = 0.2684, loss = 0.3863 [3.5 s]
+Session 10 Iteration 1 [15.4 s]: HR = 0.5514, NDCG = 0.3110, loss = 0.3050 [3.3 s]
+Session 10 Iteration 2 [16.8 s]: HR = 0.5769, NDCG = 0.3267, loss = 0.2828 [2.2 s]
+Session 10 Iteration 3 [17.8 s]: HR = 0.5960, NDCG = 0.3398, loss = 0.2693 [1.6 s]
+Session 10 Iteration 4 [19.6 s]: HR = 0.5992, NDCG = 0.3378, loss = 0.2570 [1.9 s]
+Session 10 Iteration 5 [19.6 s]: HR = 0.6182, NDCG = 0.3548, loss = 0.2490 [1.8 s]
+Session 10 Iteration 6 [18.8 s]: HR = 0.6352, NDCG = 0.3633, loss = 0.2417 [1.9 s]
+Session 10 Iteration 7 [18.6 s]: HR = 0.6320, NDCG = 0.3700, loss = 0.2334 [1.6 s]
+Session 10 Iteration 8 [18.9 s]: HR = 0.6469, NDCG = 0.3694, loss = 0.2284 [1.7 s]
+Session 10 Iteration 9 [18.1 s]: HR = 0.6532, NDCG = 0.3809, loss = 0.2227 [2.6 s]
+Session 10 Iteration 10 [17.7 s]: HR = 0.6554, NDCG = 0.3811, loss = 0.2180 [2.8 s]
+Session 10 Iteration 11 [18.0 s]: HR = 0.6638, NDCG = 0.3848, loss = 0.2134 [1.4 s]
+Session 10 Iteration 12 [18.9 s]: HR = 0.6564, NDCG = 0.3815, loss = 0.2101 [1.4 s]
+Session 10 Iteration 13 [19.1 s]: HR = 0.6649, NDCG = 0.3840, loss = 0.2071 [1.6 s]
+Session 10 Iteration 14 [19.2 s]: HR = 0.6681, NDCG = 0.3825, loss = 0.2058 [1.8 s]
+Session 10 HRs: [0.48038176033934255, 0.5514316012725344, 0.5768822905620361, 0.5959703075291622, 0.5991516436903499, 0.6182396606574762, 0.6352067868504772, 0.6320254506892895, 0.6468716861081655, 0.6532343584305408, 0.6553552492046659, 0.6638388123011665, 0.6564156945917285, 0.6648992576882291, 0.6680805938494168]
+Session 10 NDCGs: [0.26836997457714196, 0.31095876009610374, 0.3266617716002385, 0.3398422231413176, 0.33781935928971163, 0.35477165332910077, 0.36325839413292893, 0.3699848535773853, 0.36939923884328285, 0.38091993781398437, 0.3810951741743678, 0.38481080783496263, 0.3815473029300681, 0.38400069340543336, 0.38245959154393633]
+Session 10 Best HR = 0.6681, Best NDCG = 0.3825, Best Iteration = 14
+
+===== Aggregate Best Metrics =====
+Best HRs: [0.6733828207847296, 0.6680805938494168, 0.6606574761399788, 0.6648992576882291, 0.6595970307529162, 0.6564156945917285, 0.6648992576882291, 0.6648992576882291, 0.662778366914104, 0.6680805938494168]
+Best NDCGs: [0.39448814522240866, 0.39104162718642144, 0.3863883761792029, 0.384135255794111, 0.3930558577253168, 0.3843896528567767, 0.38726128412552785, 0.3907047468269556, 0.39228131251017917, 0.38245959154393633]
+Best HR mean: 0.664369, std: 0.004604
+Best NDCG mean: 0.388621, std: 0.004006
+Overall best model saved to Pretrain/ml-100k_NeuMF_16_[32,16]_best_run1.h5
+./run_test.sh: line 60: unexpected EOF while looking for matching `"'
+./run_test.sh: line 61: syntax error: unexpected end of file

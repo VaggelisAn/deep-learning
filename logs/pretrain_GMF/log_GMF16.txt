@@ -1,0 +1,50 @@
+
+
+
+------------------------------
+Running NeuMF with the following parameters:
+J = 16
+MLP Layers = 
+Negative samling ratio = 4
+Batch Size = 512
+Epochs = 30
+Learning Rate = 0.001
+Optimizer = adam
+Using TensorFlow backend.
+GMF arguments: Namespace(batch_size=512, dataset='ml-100k', epochs=30, learner='adam', lr=0.001, num_factors=16, num_neg=4, out=1, path='Data/', regs='[0,0,0,0]', verbose=1)
+Load data done [1.1 s]. #user=944, #item=1683, #train=99057, #test=943
+
+Iteration 0 [9.2 s]: HR = 0.3743, NDCG = 0.2019, loss = 0.4708 [1.0 s]
+Iteration 1 [9.4 s]: HR = 0.3765, NDCG = 0.2028, loss = 0.3554 [1.0 s]
+Iteration 2 [9.0 s]: HR = 0.4072, NDCG = 0.2162, loss = 0.3499 [0.8 s]
+Iteration 3 [8.9 s]: HR = 0.4327, NDCG = 0.2398, loss = 0.3409 [0.8 s]
+Iteration 4 [9.2 s]: HR = 0.4783, NDCG = 0.2679, loss = 0.3228 [1.0 s]
+Iteration 5 [8.7 s]: HR = 0.5270, NDCG = 0.2911, loss = 0.3058 [0.8 s]
+Iteration 6 [9.1 s]: HR = 0.5313, NDCG = 0.3021, loss = 0.2952 [1.0 s]
+Iteration 7 [8.9 s]: HR = 0.5483, NDCG = 0.3096, loss = 0.2881 [1.1 s]
+Iteration 8 [8.9 s]: HR = 0.5673, NDCG = 0.3204, loss = 0.2807 [0.9 s]
+Iteration 9 [9.3 s]: HR = 0.5769, NDCG = 0.3248, loss = 0.2730 [1.2 s]
+Iteration 10 [11.7 s]: HR = 0.5960, NDCG = 0.3396, loss = 0.2648 [0.9 s]
+Iteration 11 [10.0 s]: HR = 0.6045, NDCG = 0.3468, loss = 0.2587 [0.9 s]
+Iteration 12 [9.8 s]: HR = 0.6076, NDCG = 0.3485, loss = 0.2531 [0.8 s]
+Iteration 13 [9.7 s]: HR = 0.6235, NDCG = 0.3569, loss = 0.2480 [0.8 s]
+Iteration 14 [12.1 s]: HR = 0.6320, NDCG = 0.3620, loss = 0.2437 [1.0 s]
+Iteration 15 [9.0 s]: HR = 0.6235, NDCG = 0.3631, loss = 0.2394 [0.9 s]
+Iteration 16 [9.2 s]: HR = 0.6469, NDCG = 0.3693, loss = 0.2347 [1.0 s]
+Iteration 17 [10.0 s]: HR = 0.6437, NDCG = 0.3750, loss = 0.2287 [0.9 s]
+Iteration 18 [10.9 s]: HR = 0.6501, NDCG = 0.3784, loss = 0.2249 [1.0 s]
+Iteration 19 [9.8 s]: HR = 0.6479, NDCG = 0.3730, loss = 0.2221 [0.8 s]
+Iteration 20 [9.4 s]: HR = 0.6469, NDCG = 0.3752, loss = 0.2183 [1.0 s]
+Iteration 21 [9.0 s]: HR = 0.6522, NDCG = 0.3790, loss = 0.2164 [0.9 s]
+Iteration 22 [8.9 s]: HR = 0.6554, NDCG = 0.3821, loss = 0.2141 [1.0 s]
+Iteration 23 [11.1 s]: HR = 0.6458, NDCG = 0.3768, loss = 0.2126 [1.0 s]
+Iteration 24 [12.4 s]: HR = 0.6490, NDCG = 0.3802, loss = 0.2102 [1.1 s]
+Iteration 25 [10.2 s]: HR = 0.6479, NDCG = 0.3791, loss = 0.2093 [0.9 s]
+Iteration 26 [10.2 s]: HR = 0.6437, NDCG = 0.3755, loss = 0.2074 [1.2 s]
+Iteration 27 [10.8 s]: HR = 0.6469, NDCG = 0.3790, loss = 0.2067 [0.9 s]
+Iteration 28 [10.2 s]: HR = 0.6437, NDCG = 0.3800, loss = 0.2063 [1.0 s]
+Iteration 29 [9.9 s]: HR = 0.6437, NDCG = 0.3821, loss = 0.2050 [0.9 s]
+End. Best Iteration 22:  HR = 0.6554, NDCG = 0.3821. 
+The best GMF model is saved to Pretrain/ml-100k_GMF_16_1779539258.h5
+finishdddd
+---------------------------------------

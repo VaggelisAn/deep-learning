@@ -1,0 +1,46 @@
+
+
+
+------------------------------
+Running NeuMF with the following parameters:
+J = 8
+MLP Layers = [16,8]
+Negative samling ratio = 4
+Batch Size = 512
+Epochs = 15
+Learning Rate = 0.001
+Optimizer = adam
+Using TensorFlow backend.
+NeuMF arguments: Namespace(batch_size=512, dataset='ml-100k', epochs=15, layers='[16,8]', learner='adam', lr=0.001, mf_pretrain='Pretrain/ml-100k_GMF_8.h5', mlp_pretrain='Pretrain/ml-100k_MLP_[16,8].h5', num_factors=8, num_neg=4, out=1, path='Data/', reg_layers='[0,0]', reg_mf=0, runs=1, verbose=1) 
+Load data done [2.3 s]. #user=944, #item=1683, #train=99057, #test=943
+
+===== Training Session 1/1 =====
+Load pretrained GMF (Pretrain/ml-100k_GMF_8.h5) and MLP (Pretrain/ml-100k_MLP_[16,8].h5) models done. 
+Session 1 init: HR = 0.6257, NDCG = 0.3625
+Session 1 Iteration 0 [12.9 s]: HR = 0.6479, NDCG = 0.3752, loss = 0.2468 [1.1 s]
+Session 1 Iteration 1 [12.9 s]: HR = 0.6373, NDCG = 0.3754, loss = 0.2393 [1.3 s]
+Session 1 Iteration 2 [11.1 s]: HR = 0.6373, NDCG = 0.3748, loss = 0.2373 [1.1 s]
+Session 1 Iteration 3 [10.5 s]: HR = 0.6363, NDCG = 0.3769, loss = 0.2345 [1.2 s]
+Session 1 Iteration 4 [12.2 s]: HR = 0.6416, NDCG = 0.3799, loss = 0.2341 [1.2 s]
+Session 1 Iteration 5 [12.2 s]: HR = 0.6426, NDCG = 0.3800, loss = 0.2327 [1.0 s]
+Session 1 Iteration 6 [10.2 s]: HR = 0.6458, NDCG = 0.3814, loss = 0.2321 [1.0 s]
+Session 1 Iteration 7 [11.4 s]: HR = 0.6501, NDCG = 0.3809, loss = 0.2314 [1.1 s]
+Session 1 Iteration 8 [9.7 s]: HR = 0.6426, NDCG = 0.3786, loss = 0.2299 [1.3 s]
+Session 1 Iteration 9 [9.7 s]: HR = 0.6384, NDCG = 0.3820, loss = 0.2292 [1.1 s]
+Session 1 Iteration 10 [11.0 s]: HR = 0.6511, NDCG = 0.3840, loss = 0.2291 [1.1 s]
+Session 1 Iteration 11 [10.8 s]: HR = 0.6490, NDCG = 0.3867, loss = 0.2280 [1.1 s]
+Session 1 Iteration 12 [10.5 s]: HR = 0.6405, NDCG = 0.3819, loss = 0.2270 [1.2 s]
+Session 1 Iteration 13 [11.0 s]: HR = 0.6479, NDCG = 0.3833, loss = 0.2265 [1.1 s]
+Session 1 Iteration 14 [10.1 s]: HR = 0.6426, NDCG = 0.3804, loss = 0.2261 [1.1 s]
+Session 1 HRs: [0.647932131495228, 0.6373276776246023, 0.6373276776246023, 0.6362672322375398, 0.6415694591728526, 0.6426299045599152, 0.6458112407211029, 0.6500530222693531, 0.6426299045599152, 0.6383881230116649, 0.6511134676564156, 0.6489925768822906, 0.6405090137857901, 0.647932131495228, 0.6426299045599152]
+Session 1 NDCGs: [0.3752189600194051, 0.37537351206552133, 0.37484958809529834, 0.3768511215077453, 0.37991866730283463, 0.3800027059757437, 0.38141339186525913, 0.3808522292683515, 0.37863166525250636, 0.3820256596354697, 0.3839763159179786, 0.3866981130450901, 0.38186550781352513, 0.3833422416684759, 0.38043370318931985]
+Session 1 Best HR = 0.6511, Best NDCG = 0.3840, Best Iteration = 10
+
+===== Aggregate Best Metrics =====
+Best HRs: [0.6511134676564156]
+Best NDCGs: [0.3839763159179786]
+Best HR mean: 0.651113, std: 0.000000
+Best NDCG mean: 0.383976, std: 0.000000
+Overall best model saved to Pretrain/ml-100k_NeuMF_8_[16,8]_best_run1.h5
+./run_test.sh: line 60: unexpected EOF while looking for matching `"'
+./run_test.sh: line 61: syntax error: unexpected end of file
